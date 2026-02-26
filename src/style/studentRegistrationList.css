@@ -1,0 +1,17 @@
+ td,
+th {
+  border: 2px solid #333;
+  padding: 1rem;
+}
+
+/* Student Registration List Table */
+.studentRegistrationList {
+  width: 100%;
+  overflow: auto; /* ✅ scroll both directions if needed */
+}
+
+/* Course List Table */
+.courseList {
+  width: 100%;
+  overflow-x: auto; /* ✅ horizontal scroll only */
+}

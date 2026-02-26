@@ -1,0 +1,88 @@
+ .user-profile {
+  padding: 30px;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f9f9fb;
+  min-height: 100vh;
+}
+
+/* Heading */
+.courses-heading {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Grid */
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card */
+.course-card {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.course-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.no-image {
+  height: 160px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Info */
+.course-info {
+  padding: 15px;
+}
+
+.course-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.course-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0;
+}
+
+/* No course / No user */
+.no-course {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.no-user {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}

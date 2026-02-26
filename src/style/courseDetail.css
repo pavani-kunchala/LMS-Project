@@ -1,0 +1,149 @@
+ .course-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* Detail card */
+.detail-card {
+  width: 90%;
+  background: #eee;
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+/* Description block */
+.description-block {
+  width: 500px;
+}
+
+.description-header .course-title {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #0c0015;
+}
+
+.description-header .course-text {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  color: #0c0015;
+}
+
+.duration-block h4,
+.quiz-block h4 {
+  color: #0c0015;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.topics-block ul {
+  padding-left: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.highlight {
+  color: #a43af8;
+}
+
+/* Image block */
+.image-block {
+  width: 400px;
+  border-radius: 15px;
+  border: 4px solid #a43af8;
+  outline: 5px solid #1e0036;
+  box-shadow: 0 0 0 9px #a43af8;
+}
+
+.image-block img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Form block */
+.form-block {
+  width: 90%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #eee;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.form-heading {
+  font-size: 2rem;
+  padding: 2rem 0;
+  color: #0c0015;
+}
+
+/* Form actions */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background: #5a4bcf;
+  transform: scale(1.05);
+}
+
+.enroll-btn {
+  background: #00b894;
+  color: #fff;
+}
+
+.enroll-btn:hover {
+  background: #019874;
+  transform: scale(1.05);
+}
+
+.admin-message {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #d63031;
+  background: rgba(214, 48, 49, 0.1);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1182px) {
+  .detail-card {
+    justify-content: center;
+    align-items: center;
+  }
+  .image-block {
+    order: 1;
+    width: 100%;
+  }
+  .description-block {
+    order: 2;
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,60 @@
+ .error {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Headings */
+.error h1 {
+  font-size: 4.5rem;
+  color: #2a2842;
+  padding: 1rem 0;
+}
+
+.error h4 {
+  padding: 0.5rem;
+  color: #ff4f4f;
+}
+
+/* Paragraphs */
+.error p {
+  color: #333;
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+
+/* Button */
+.error button {
+  margin: 1rem 0;
+  width: 150px;
+  height: 45px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: #3f3d56;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.error button:hover,
+.error button:active {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media screen and (max-width: 440px) {
+  .error {
+    width: 95%;
+  }
+
+  .error p {
+    text-align: center;
+  }
+
+  .error img {
+    width: 90%;
+  }
+}

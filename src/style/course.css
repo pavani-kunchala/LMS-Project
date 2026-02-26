@@ -1,0 +1,99 @@
+ .course {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* Heading */
+.course-heading h1 {
+  font-size: 2rem;
+  color: #0c0015;
+  margin: 0;
+}
+
+/* Box container */
+.course-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual card */
+.course-card {
+  width: 300px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 6px #a43af8c4;
+  margin: 0.5rem;
+  background: rgb(228 196 253 / 34%);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0 0 6px rgb(30 0 54 / 77%);
+}
+
+/* Image / placeholder */
+.course-image,
+.no-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  color: #555;
+}
+
+/* Description area */
+.course-description {
+  flex: 1;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-title {
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  color: #0c0015;
+  line-height: 1.2;
+}
+
+.course-duration,
+.course-quiz {
+  padding: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #0c0015;
+}
+
+/* Optional button */
+.course-btn {
+  width: 140px;
+  height: 42px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background: #1e0036;
+  color: #fff;
+  box-shadow: -3px -2px 0 2px #a43af8;
+  margin-top: auto;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: box-shadow 0.3s ease;
+}
+
+.course-btn:hover {
+  box-shadow: 3px 2px 0 2px #a43af8;
+}

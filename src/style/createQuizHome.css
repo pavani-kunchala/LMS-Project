@@ -1,0 +1,101 @@
+ .create-course {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Heading */
+.form-heading h1 {
+  font-size: 2rem;
+  color: #0c0015;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form wrapper */
+.course-form {
+  width: 100%;
+  max-width: 500px; /* ✅ consistent max width */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Inputs and textarea aligned */
+.form-input,
+.form-textarea,
+.form-file,
+.form-btn {
+  width: 100%; /* ✅ same width for all */
+  display: block; /* ensures same starting alignment */
+  box-sizing: border-box;
+}
+
+/* Inputs & Textarea */
+.form-input,
+.form-textarea,
+.form-file {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-file:focus {
+  border-color: #a43af8;
+  box-shadow: 0 0 6px rgba(164, 58, 248, 0.4);
+}
+
+/* Textarea specifics */
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Button */
+.form-btn {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #a43af8, #1e0036);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(164, 58, 248, 0.4);
+}
+
+.form-btn:hover {
+  background: linear-gradient(135deg, #1e0036, #a43af8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(30, 0, 54, 0.5);
+}
+
+.form-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 8px rgba(30, 0, 54, 0.4);
+}
+
+/* ✅ Responsive tweaks */
+@media (max-width: 600px) {
+  .course-form {
+    max-width: 100%;
+  }
+
+  .form-heading h1 {
+    font-size: 1.6rem;
+  }
+
+  .form-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
